@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Pastitos&Portland</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+            <!-- Logo Inmobiliaria -->
+            <a href="/index.html" class="navbar-brand ms-4">
+                <h1>Pastitos&Portland</h1>
+            </a>
+            <!-- Fin Logo -->
+
+            <!--Icono de menu responsive-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Fin icono responsive-->
+            <div class="collapse navbar-collapse" id="navbarID">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a href="/nosotros.html" class="nav-link" aria-current="page">
+                            <h3 class="bi bi-person"> Nosotros</h3>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/propiedades.html" class="nav-link">
+                            <h3 class="bi bi-house"> Propiedades</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                            <h3 class="bi bi-envelope-paper"> Formulario</h3>
+                            <span></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#contactoModal">
+                            <h3 class="bi bi-person-rolodex"> Contacto</h3>
+                            <span></span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <main class="contenedor">
+
+        <div class="carousel slide" id="carousel-index" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!--Indicadores en el pie de la imagen-->
+                <ol class="carousel-indicators">
+                    <li class="active" data-bs-target="#carousel-index" data-bs-slide-to="0">
+                    </li>
+                    <li data-bs-target="#carousel-index" data-bs-slide-to="1">
+                    </li>
+                    <li data-bs-target="#carousel-index" data-bs-slide-to="2">
+                    </li>
+
+                </ol>
+
+                <div class="carousel-item active">
+                    <img src="/img/semento.jpg" class="d-block w-100" alt="imgSemento">
+                    <div class="carousel-caption">
+                        <p class="h1">Pastitos & Portland</p>
+                        <div class="text-center d-none d-md-block">
+                            <h3>Somos una Imbobiliaria dedicada a la venta de propiedades y terrenos en Punta Del Este.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="/img/pasto.jpg" class="d-block w-100" alt="imgPasto">
+                    <div class="carousel-caption">
+                        <h2 class="">Pastitos & Portland</h2>
+                        <div class="text-center d-none d-md-block">
+                            <h3>Somos una Imbobiliaria dedicada a la venta de propiedades y terrenos en Punta Del Este.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="/img/playa.jpg" class="d-block w-100" alt="ImgPlaya">
+                    <div class="carousel-caption">
+                        <h2 class="">Pastitos $ Portland</h2>
+                        <div class="text-center d-none d-md-block">
+                            <h3>Somos una Imbobiliaria dedicada a la venta de propiedades y terrenos en Punta Del Este.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Controles de navegacion-->
+            <a href="#carousel-index" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                </span>
+                <span class="visually-hidden">Previouse</span>
+            </a>
+
+            <a href="#carousel-index" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                </span>
+                <span class="visually-hidden">Next</span>
+            </a>
+
+        </div>
+
+    </main>
+
+    <div class="container">
+        <div class="row mt-md-5 ">
+            <div class="mb-md-5">
+                <h2 class="text-center">Best properties</h2>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="card col-12 col-md-3 me-1 mb-5 p-2  card_animacion">
+                    <img src="/img/casaUno.jpeg" class="card-img-top" alt="casaUno">
+                    <div class="card-body">
+                        <h3 class="card-title">Venta</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Ubicacion:</b> Jose Ignacio</li>
+                            <li class="list-group-item"><b>Tamaño: </b>400 m<sup>2</sup></li>
+                            <li class="list-group-item"><b>Nombre:</b> Pepes House</li>
+                            <li class="list-group-item"><b>Telefono vendedor:</b> 95559226</li>
+                        </ul>
+                        <a href="/casaUno.html" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3 me-1 mb-5 p-2  card_animacion ">
+                    <img src="/img/casaDos.jpg" class="card-img-top" alt="imgCasa">
+                    <div class="card-body">
+                        <h3 class="card-title">Alquiler</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Ubicacion:</b></li>
+                            <li class="list-group-item"><b>Tamaño: </b>400 m<sup>2</sup></li>
+                            <li class="list-group-item"><b>Nombre:</b> Pepes House</li>
+                            <li class="list-group-item"><b>Telefono vendedor:</b> 095559226</li>
+                        </ul>
+                        <a href="/casaDos.html" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3 me-1 mb-5 p-2   card_animacion ">
+                    <img src="/img/terrenoTres.JPG" class="card-img-top" alt="imgtereno">
+                    <div class="card-body">
+                        <h3 class="card-title">Venta</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Ubicacion:</b></li>
+                            <li class="list-group-item"><b>Tamaño: </b>400 m<sup>2</sup></li>
+                            <li class="list-group-item"><b>Nombre</b> Pepes Property</li>
+                            <li class="list-group-item"><b>Telefono vendedor:</b> 095559226</li>
+                        </ul>
+                        <a href="/terrenoUno.html" class="btn btn-primary">Ver mas...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid py-2 text-center bg-dark text-light">
+        <div class="row pt-4">
+            <div class="col-md-4 col-sm-12">
+                <h3 class="bi bi-person-rolodex"></h3>
+                <h3>
+                    <a href="mailto:pastitos&portland@gmail.com?Subject=Interesado%20en%20el%20curso">Contactar por
+                        correo</a>
+                </h3>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h3 class="bi bi-phone"></h3>
+                <h3> Uruguay <br>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+598 95 559 226">
+                        <span class="enlace">Cel. +598 95 559 226</span> <br></a>
+                    Tel. (+598) 42 236 213
+
+                </h3>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h3 class="bi bi-geo-alt"></h3>
+                <h3>
+                    <a href="https://goo.gl/maps/gdEnvhBj3zN1BVnV7" target="_blank">Maldonado, Uruguay</a>
+                </h3>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--Modal-->
+    <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="modal-Contacto" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-Contacto">Formas de contactarnos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Celular: 095559226</li>
+                        <li>Email: pastitosPorland@gmail.com</li>
+                        <li class="bi bi-instagram"> Instagram: Pastitos_Portland</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal-->
+
+    <!--Modal Formulario-->
+    <div class="modal fade " id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title bi bi-envelope-paper" id="formularioModalLabel">Formulario</h2>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="">
+                        <div class="form-row">
+                            <div class="mb-3 col-md-12 ">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input maxlength="12" minlength="3" type="text" id="nombre" class="form-control"
+                                    placeholder="Nombre" required>
+                            </div>
+                            <div class="mb-3 col-md-12 ">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input maxlength="12" minlength="3" type="text" id="apellido" class="form-control"
+                                    placeholder="Apellido" required>
+                            </div>
+                            <div class="mb-3 col-md-12 ">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3 col-md-12  ">
+                                <label for="telefono" class="form-label">Telefono:</label>
+                                <input maxlength="12" minlength="3" type="number" id="telefono" class="form-control"
+                                    placeholder="Telefono" required>
+                            </div>
+                            <div class="mb-3 col-md-12 ">
+                                <label for="direccion" class="form-label">Direccion:</label>
+                                <input maxlength="20" minlength="3" type="text" id="direccion" class="form-control"
+                                    placeholder="Direccion" required>
+                            </div>
+                            <div class="mb-3 col-md-12 ">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Comentarios & Sugerencias:</label>
+                                    <textarea maxlength="120" minlength="3" class="form-control mt-2"
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-success col-12" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--Modal Formulario Cierre-->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

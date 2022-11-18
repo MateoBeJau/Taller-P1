@@ -1,0 +1,34 @@
+
+
+h3{
+    font-size: 15px;
+}
+
+.enlace{
+    color: white;
+    text-decoration: none;
+}
+
+.bg-shadow{
+    background-color: rgba(blue, gray, black, 1);
+}
+
+
+@media ( min-width: 820px){
+    .futer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+.card_animacion{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) ;
+    transition: all 400ms ease;
+}
+
+.card_animacion:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%);
+}
+
